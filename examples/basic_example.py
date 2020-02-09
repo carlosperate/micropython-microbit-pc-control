@@ -1,9 +1,8 @@
 from microbit import *
 
-from pc_controller import Keyboard, Mouse
+from pc_control import Keyboard, Mouse
 
 keyboard = Keyboard()
-
 mouse = Mouse()
 
 
@@ -12,14 +11,12 @@ def main():
     sleep(1000)
 
     while True:
-        if buttonA.is_pressed():
+        if button_a.is_pressed():
             mouse.left_click()
-            sleep(2000)
-        if buttonB.is_pressed():
+            sleep(500)
+        if button_b.is_pressed():
             keyboard.write("Hello, World!")
-            sleep(2000)
-
-        sleep(200)
+            sleep(500)
 
 
 if __name__ == "__main__":

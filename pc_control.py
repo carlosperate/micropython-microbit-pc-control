@@ -28,6 +28,9 @@ class Mouse():
     def move_horizontal(self, pixels=1):
         uart.write("|@s-m-mh@|{}|@e@|\n".format(pixels))
 
+    def move_relative(self, x_pixels=1, y_pixels=1):
+        uart.write("|@s-m-mr@|{} {}|@e@|\n".format(x_pixels, y_pixels))
+
     def left_click(self):
         uart.write("|@s-m-ckl@||@e@|\n")
 

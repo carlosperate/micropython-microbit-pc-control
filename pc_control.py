@@ -5,7 +5,16 @@ from microbit import uart
 class Keyboard():
 
     def write(self, text):
-        uart.write("|@s-k-txt@|{}|@e@|".format(text))
+        uart.write("|@s-k-txt@|{}|@e@|\n".format(text))
+
+    def press(self, key):
+        uart.write("|@s-k-prs@|{}|@e@|\n".format(key))
+
+    def key_down(self, key):
+        uart.write("|@s-k-kdo@|{}|@e@|\n".format(key))
+
+    def key_up(self, key):
+        uart.write("|@s-k-kup@|{}|@e@|\n".format(key))
 
 
 class Mouse():

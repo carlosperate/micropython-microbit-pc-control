@@ -1,11 +1,10 @@
-"""
-Example on how a micro:bit can be used to play a game that uses the arrow keys
-and space bar.
-
-When the Button A is pressed the accelerometer is used to determine which arrow
-keys to press, and will keep them pressed down until the micro:bit is tilted
-to a neutral position. When the Button B is pressed it presses the space bar.
-"""
+# Example on how a micro:bit can be used to play a game that uses the arrow
+# keys and space bar.
+#
+# When the Button A is pressed the accelerometer is used to determine which
+# arrow keys to press, and will keep them pressed down until the micro:bit is
+# tilted to a neutral position. When the Button B is pressed it presses the
+# space bar.
 from microbit import display, Image, accelerometer, button_a, button_b, sleep
 
 from pc_control import Keyboard, Mouse

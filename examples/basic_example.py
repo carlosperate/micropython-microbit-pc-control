@@ -1,3 +1,5 @@
+# Basic example with Keyboard and Mouse that does left click on Button A, and
+# writes "Hello, World!" on Button B.
 from microbit import *
 
 from pc_control import Keyboard, Mouse
@@ -8,7 +10,6 @@ mouse = Mouse()
 
 def main():
     display.show(Image.HAPPY)
-    sleep(1000)
 
     while True:
         if button_a.is_pressed():

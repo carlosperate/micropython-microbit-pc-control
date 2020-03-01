@@ -1,3 +1,6 @@
+# Simple mouse example that, when Button A is pressed, moves the mouse around
+# based on the accelerometer data. And when Button B is pressed it performs a
+# left click.
 from microbit import display, Image, accelerometer, button_a, button_b, sleep
 
 from pc_control import Mouse

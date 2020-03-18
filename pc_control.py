@@ -47,4 +47,4 @@ class Mouse():
         uart.write("|@s-m-ckr@||@e@|\n")
 
     def scroll(self, steps=1):
-        uart.write("|@s-m-s@|{}|@e@|\n".format(steps))
+        uart.write("|@s-m-scr@|{}|@e@|\n".format(steps))

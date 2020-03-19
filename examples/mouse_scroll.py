@@ -11,7 +11,7 @@ def main():
 
     while True:
         if button_a.is_pressed():
-            x = accelerometer.get_x()
+            y = accelerometer.get_y()
             mouse.scroll(y // 100)
             sleep(300)
 
